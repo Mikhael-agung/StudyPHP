@@ -23,7 +23,7 @@
             <!-- Button to Insert New Role -->
             <div class="mb-4">
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    <a href="MainEntryPoint.php?modul=role&fitur=add">Insert New Role</a>
+                    <a href="view/role_input.php">Insert New Role</a>
                 </button>
             </div>
 
