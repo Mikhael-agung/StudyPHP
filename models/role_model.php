@@ -22,7 +22,7 @@ class modelRole{
     }
 
     public function addRole($role_name, $role_description, $role_status){
-        $peran = new \Role($this->nextId, $role_name, $role_description, $role_status);
+        $peran = new Role($this->nextId++, $role_name, $role_description, $role_status);
         $this->roles[] = $peran;
         $this->saveToSession();
     }
@@ -31,14 +31,15 @@ class modelRole{
         $this->addRole("Admin", "Administrator", 1);
         $this->addRole("User", "Customer/member", 1);
         $this->addRole("kasir", "Pembayaran", 0);
+        $this->addRole("kasir", "Pembayaran", 4);
     }
     
     public function updateRole($role_id, $role_name, $role_description, $role_status){
         foreach($this->roles as $key => $role){
             if($role->role_id == $role_id){
-                $this->roles[$key]->role_name = $role_name;
-                $this->roles[$key]->role_description = $role_description;
-                $this->roles[$key]->role_status = $role_status;
+                $role->role_name = $role_name;
+                $role->role_description = $role_description;
+                $role->role_status = $role_status;
                 $this->saveToSession();
                 return true;
             }

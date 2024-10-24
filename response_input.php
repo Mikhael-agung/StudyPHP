@@ -13,7 +13,7 @@ echo "status role : ".$_POST ['role_status']."<br>";
 
 require_once 'domain_Object/node_role.php';
 $obj_role = [];
-$obj_role[] = new role(1,$_POST['role_name'],$_POST['role_description'],$_POST['role_status']);
+$obj_role[] = new role(role_id: 1,role_name: $_POST['role_name'],role_description: $_POST['role_description'],role_status: $_POST['role_status']);
 include 'view/role_list.php';
 
 

@@ -49,6 +49,7 @@
                         <td class="py-3 px-4 text-blue-600"><?php echo htmlspecialchars($role->role_name) ?></td>
                         <td class="py-3 px-4 text-blue-600"><?php echo htmlspecialchars($role->role_description) ?></td>
                         <td class="py-3 px-4 text-blue-600"><?php echo htmlspecialchars($role->role_status) ?></td>
+                        <!-- <td class="py-3 px-4 text-blue-600"><?php echo htmlspecialchars($role->role_status) ?></td> -->
                         <td class="w-1/6 py-3 px-4">
                             <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded mr-2">
                                 <a href="#">Update</a>
