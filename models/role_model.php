@@ -1,5 +1,5 @@
 <?php
-require_once '../domain_Object/node_role.php';
+require_once 'domain_Object/node_role.php';
 class modelRole{
     private $roles = [];
     private $nextId = 1;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,15 +20,6 @@
         <!-- Main Content -->
         <div class="flex-1 p-8">
             <!-- Your main content goes here -->
-            <?php
-            foreach ($obj_role as $role) {
-                echo "id role : " .$role->role_id. "<br>";
-                echo "nama role  : " .$role->role_name. "<br>";
-                echo "keterangan  : " .$role->role_description. "<br>";
-                echo "status role : " .$role->role_status. "<br>";
-                echo "<br>";    
-                }
-            ?>
             INI HALAMAN KOSONG TES KELAS awkaowkaowkawkaoawkao
         </div>
     </div>
